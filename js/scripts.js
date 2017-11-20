@@ -1,4 +1,4 @@
-//hamburguer menu navigation
+//HAMBURGUER MOBILE NAV
 
 $(document).ready(function () {
     
@@ -29,45 +29,74 @@ $('#hamburger, #nav-content a').click (function () {
 
 });
 
-//paralax function
+//PARALAX
 
 $(document).ready(function () {
     $('.parallax').parallax();
+ });
+       
+   
+       
+//TOGGLE PUBLICAÇÕES
 
-       
-       /* $('.btn-mod-border').on('click', function(e){
-        $('.toggle').toggleClass('active');
-        $('.btn-mod-border').toggleClass('btn-active');
-            $('.secondary-link').toggleClass('link-active');
-            
-    })*/
-       
-//togle buttons
-    
+   $(document).ready(function () { 
 // set content on click
-$('.btn-mod-border').click(function (e) {
+$('.btn-mod-border-pubs').click(function (e) {
     e.preventDefault();
     setContent($(this));
 });
 
     
 // set content on load
-$('.btn-mod-border.btn-active').length && setContent($('.btn-mod-border.btn-active'));
+$('.btn-mod-border-pubs.btn-active').length && setContent($('.btn-mod-border-pubs.btn-active'));
 
 function setContent($el) {
-    $('.btn-mod-border').removeClass('btn-active');
-    $('.toggle').hide();
+    $('.btn-mod-border-pubs').removeClass('btn-active');
+    $('.toggle-pubs').hide();
 
     $el.addClass('btn-active');
     $($el.data('rel')).show();
 };
         $('.button-collapse').sideNav();
-           });
+    
+     });
+
+
+
+//TOGGLE ARQUIVO
+
+  $(document).ready(function () {    
+// set content on click
+$('.btn-mod-border-arq').click(function (e) {
+    e.preventDefault();
+    setContent($(this));
+});
+
+    
+// set content on load
+$('.btn-mod-border-arq.btn-active').length && setContent($('.btn-mod-border-arq.btn-active'));
+
+function setContent($el) {
+    $('.btn-mod-border-arq').removeClass('btn-active');
+    $('.toggle-arq').hide();
+
+    $el.addClass('btn-active');
+    $($el.data('rel')).show();
+};
+        $('.button-collapse').sideNav();  
+    
+    
+        });   
 
 
 
 
-//hide menu on-scroll down
+         
+
+
+
+
+//HIDE MENU ONSCROLL DOWN
 
 var didScroll;
 var lastScrollTop = 0;

@@ -542,7 +542,7 @@ hr {
   height: 0.04rem;
   background-color: #ddd; }
 
-.btn-mod-border {
+.btn-mod-border-pubs, .btn-mod-border-arq {
   width: 100%;
   min-width: 160px;
   background-color: #fff;
@@ -561,7 +561,7 @@ hr {
   font-style: italic;
   color: #777;
   text-transform: lowercase; }
-  .btn-mod-border:hover {
+  .btn-mod-border-pubs:hover, .btn-mod-border-arq:hover {
     width: 100%;
     background-color: #fff;
     min-width: 160px;
@@ -569,7 +569,7 @@ hr {
     border: 1px solid #B90C0E;
     box-sizing: border-box;
     color: #B90C0E; }
-  .btn-mod-border:focus {
+  .btn-mod-border-pubs:focus, .btn-mod-border-arq:focus {
     background-color: #fff;
     color: #B90C0E;
     border: 1px solid #B90C0E; }
