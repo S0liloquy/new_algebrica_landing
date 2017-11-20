@@ -61,8 +61,10 @@ function setContent($el) {
     $el.addClass('btn-active');
     $($el.data('rel')).show();
 };
-        $(".button-collapse").sideNav();
+        $('.button-collapse').sideNav();
            });
+
+
 
 
 //hide menu on-scroll down
