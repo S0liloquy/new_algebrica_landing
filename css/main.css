@@ -188,6 +188,11 @@ p {
       float: none;
       padding: 0.5rem 0; } }
 
+.card .card-title {
+  color: #B90C0E;
+  font-weight: 700;
+  padding-bottom: 2rem; }
+
 /*HEADER*/
 .h-nav {
   width: 100%;

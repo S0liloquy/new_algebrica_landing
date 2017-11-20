@@ -313,6 +313,15 @@ p {
 }
 
 
+//materialize overrides
+
+.card .card-title{
+    color: $primary-red;
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+
+
 /*HEADER*/
 
 .h-nav {
