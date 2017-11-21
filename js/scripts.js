@@ -142,10 +142,10 @@ function hasScrolled() {
 //SLICK INITIALIZE
 
 $(document).ready(function(){
-  $('.item-slider').slick({
-      infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3
+  $('.content-arquivo-revista').slick ({
+      slidesToShow: 3,
+  dots:true,
+  centerMode: true,
   });
 });
 

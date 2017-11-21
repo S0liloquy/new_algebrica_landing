@@ -672,7 +672,7 @@ img.logo {
 .noticias{
     padding-top: 30rem;
 }
-.item-arquivo{
+/*.item-arquivo{
     width: 100%;
     position: relative;
     display: inline-block;
@@ -745,11 +745,20 @@ img.logo {
     
 }
 
-.item-slider{
-    width:50%;
+
+
+*/
+
+.item-slider {
+   margin: 10px;
 }
+.item-slider img{
+    width:25%;
+}
+
 .content-arquivo-revista{
-    width: 100%;   
+    width: 90%;  
+    margin: 0 auto;
     border: 1px solid $primary-red;
 }
 
