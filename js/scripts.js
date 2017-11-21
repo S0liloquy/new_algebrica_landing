@@ -141,13 +141,15 @@ function hasScrolled() {
 
 //SLICK INITIALIZE
 
+
 $(document).ready(function(){
   $('.content-arquivo-revista').slick ({
-      slidesToShow: 3,
+    
+  slidesToShow: 3,
+  slidesToScroll: 3,
   dots:true,
   centerMode: true,
+      arrows: true
   });
 });
-
-
 
