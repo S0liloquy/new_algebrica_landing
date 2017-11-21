@@ -139,6 +139,8 @@ function hasScrolled() {
     lastScrollTop = st;
 }
 
+//SLICK INITIALIZE
+
 
 
 
