@@ -559,10 +559,14 @@ img.logo {
           transition: opacity 0.2s ease; }
 
 .l-btn-mod-item {
+  width: 100%;
   display: inline-block;
   position: absolute;
-  top: 0;
-  left: 0; }
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
 
 .btn-mod-border-item {
   width: 80%;
