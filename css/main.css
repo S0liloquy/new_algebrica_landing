@@ -597,6 +597,13 @@ img.logo {
     background-color: #B90C0E;
     box-shadow: none; }
 
+.item-slider {
+  width: 50%; }
+
+.content-arquivo-revista {
+  width: 100%;
+  border: 1px solid #B90C0E; }
+
 /*MATERIALIZE MODS*/
 .l-btn-mod {
   display: inline-block; }

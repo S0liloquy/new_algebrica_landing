@@ -141,7 +141,13 @@ function hasScrolled() {
 
 //SLICK INITIALIZE
 
-
+$(document).ready(function(){
+  $('.item-slider').slick({
+      infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3
+  });
+});
 
 
 
