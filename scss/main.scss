@@ -112,7 +112,7 @@ $hamburger-hover-filter: opacity(50%) !default;
 /*LAYOUT*/
 
 .t-wrap {
-    width: 80%;
+    width: 98%;
     margin: 0 auto;
     padding-top: 4rem;
     margin-bottom: 4rem;
@@ -138,6 +138,7 @@ $hamburger-hover-filter: opacity(50%) !default;
 
 /*RESET*/
 
+/*
 *,
 *:before,
 *:after {
@@ -146,6 +147,7 @@ $hamburger-hover-filter: opacity(50%) !default;
     box-sizing: border-box;
     max-width: 100%;
 }
+*/
 
 img {
     max-width: 100%;
@@ -676,8 +678,15 @@ img.logo {
     padding-top: 30rem;
 }
 
-/*
 
+.teste-hover{
+    width:20%;
+}
+
+
+.item-arquivo img{
+    width: 100%;
+}
 
 .item-arquivo{
     width: 100%;
@@ -692,6 +701,8 @@ img.logo {
     position:absolute;
     top:0;
     left:0;
+    right: 0;
+    bottom: 0;
     display:inline-block;
     box-sizing: border-box;
 }
@@ -755,32 +766,56 @@ img.logo {
 
 
 
-
-
-
-
-
-
-
-
-
-
-*/
-
-
-
-
 .content-arquivo-revista{
-    width: 90%;  
-   height: 500px;
+    width: 100%;  
     margin: 0 auto;
-    border: 1px solid $primary-red;
+    
    
 }
 
-.slick-prev:after, .slick-next:before { 
-    color:red !important;
+/////////////////////////////////////////////
+////////////////SLICK///////////////////////
+
+.slick-prev:before, .slick-next:before {    
+    color: $primary-red;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
 }
+
+.slick-next:before{
+     content: '\276D';
+}
+.slick-prev:before{
+     content: '\276C';
+}
+.slick-prev, .slick-next{
+ height: 3.5rem;   
+}
+
+.slick-next{
+    right:-2rem;
+}
+
+.slick-prev{
+    left: -2rem;
+}
+
+/* the slides */
+.slick-slide {
+    margin: 0 10px;
+    opacity: 0.8;
+   
+}
+
+.slick-list{
+    background-color: rgba(0,0,0,0.05);
+}
+
+.slick-dots{
+    bottom: -2.5rem;
+}
+
+//////////////////////////////////////////////////////////77
 
 /*MATERIALIZE MODS*/
 

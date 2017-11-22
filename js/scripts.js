@@ -143,18 +143,11 @@ function hasScrolled() {
 
 
 $(document).ready(function(){
-  $('.content-arquivo-revista').slick ({
- 
-  draggable: false,
-  accessibility: true,  
-  dots: true,
+  $('.content-arquivo-revista').slick({
+    centerMode: true,
+  centerPadding: '30px',
   slidesToShow: 6,
-      slidesPerRow:6,
-      slidesToScroll:6,
-  centerMode: true,
-  centerPadding: '40px',
-  arrows: true
+      dots: true,
+      accessibility:true
   });
 });
-
-$('.content-arquivo-revista').slick('refresh');
