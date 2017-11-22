@@ -1,0 +1,45 @@
+.teste-hover{
+    width: 30%;
+}
+
+
+img {
+    max-width: 100%;
+    background-size: cover;
+    min-width: 80px;
+    vertical-align:top;
+}
+
+.t-wrap {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.content-arquivo-revista{
+    width: 100%;  
+    margin: 0 auto;
+    border: 1px solid red;
+   
+}
+
+.slick-prev:before, .slick-next:before { 
+    color:red !important;
+}
+
+/* the slides */
+.slick-slide {
+    margin: 0 10px;
+}
+/* the parent */
+.slick-list {
+    margin: 0 -10px;
+}
+
+.item-arquivo{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    
+}

@@ -767,12 +767,7 @@ img.logo {
 
 */
 
- .slick-slide {
-    width: auto;
-     height: auto;
-     float: right;
-    
-}
+
 
 
 .content-arquivo-revista{
@@ -781,9 +776,6 @@ img.logo {
     margin: 0 auto;
     border: 1px solid $primary-red;
    
-    &:before{
-         @include clearfix;;
-     }
 }
 
 .slick-prev:after, .slick-next:before { 

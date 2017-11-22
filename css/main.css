@@ -621,21 +621,11 @@ img.logo {
 
 
 */
-.slick-slide {
-  width: auto;
-  height: auto;
-  float: right; }
-
 .content-arquivo-revista {
   width: 90%;
   height: 500px;
   margin: 0 auto;
   border: 1px solid #B90C0E; }
-  .content-arquivo-revista:before:after {
-    content: '';
-    display: table;
-    line-height: 0;
-    clear: both; }
 
 .slick-prev:after, .slick-next:before {
   color: red !important; }
