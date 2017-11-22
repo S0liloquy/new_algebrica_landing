@@ -144,12 +144,17 @@ function hasScrolled() {
 
 $(document).ready(function(){
   $('.content-arquivo-revista').slick ({
-    
-  slidesToShow: 3,
-  slidesToScroll: 3,
-  dots:true,
+ 
+  draggable: false,
+  accessibility: true,  
+  dots: true,
+  slidesToShow: 6,
+      slidesPerRow:6,
+      slidesToScroll:6,
   centerMode: true,
-      arrows: true
+  centerPadding: '40px',
+  arrows: true
   });
 });
 
+$('.content-arquivo-revista').slick('refresh');

@@ -533,6 +533,7 @@ img.logo {
 
 /*
 
+
 .item-arquivo{
     width: 100%;
     position: relative;
@@ -607,30 +608,38 @@ img.logo {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 */
+.slick-slide {
+  width: auto;
+  height: auto;
+  float: right; }
+
 .content-arquivo-revista {
   width: 90%;
+  height: 500px;
   margin: 0 auto;
-  border: 1px solid #B90C0E;
-  overflow: hidden; }
+  border: 1px solid #B90C0E; }
+  .content-arquivo-revista:before:after {
+    content: '';
+    display: table;
+    line-height: 0;
+    clear: both; }
 
-.slick-prev:before, .slick-next:before {
+.slick-prev:after, .slick-next:before {
   color: red !important; }
 
-/*
-
-.item-slider {
-    width: 30%;
-    min-width: 180px;
-    max-width: 320px;
-    height: auto;
-    
-}
-
-
-
-
-*/
 /*MATERIALIZE MODS*/
 .l-btn-mod {
   display: inline-block; }
