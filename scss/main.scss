@@ -118,6 +118,11 @@ $hamburger-hover-filter: opacity(50%) !default;
     margin-bottom: 4rem;
 }
 
+.s-wrap{
+    @extend .t-wrap;
+    width: 100%;
+    background-color: $primary-red;
+}
 .parallax-container {
     height: 42rem;
     @include small-nav-breakpoint{
@@ -686,6 +691,7 @@ img.logo {
 
 .item-arquivo img{
     width: 100%;
+   
 }
 
 .item-arquivo{
@@ -725,6 +731,12 @@ img.logo {
     transition: opacity 0.2s ease;
 }
 
+.item-arquivo:hover img{
+    opacity: 0.8;    
+    transition: all 0.2s ease;
+    
+}
+
 .l-btn-mod-item {
     width: 100%;
     display: inline-block;
@@ -735,7 +747,7 @@ img.logo {
 }
 
 .btn-mod-border-item{
-   width:80%;
+   width:85%;
     background-color:$primary-red;
     opacity: 0;
     position:absolute;

@@ -144,10 +144,47 @@ function hasScrolled() {
 
 $(document).ready(function(){
   $('.content-arquivo-revista').slick({
-    centerMode: true,
+  centerMode: true,
   centerPadding: '30px',
-  slidesToShow: 6,
+  slidesToShow: 7,
       dots: true,
-      accessibility:true
+      accessibility:true,
+      initialSlide:'11',
+      responsive: [
+    {
+      breakpoint: 1281,
+      settings: {
+        centerMode: true,
+        centerPadding: '30px',
+        slidesToShow: 5,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        centerMode: true,
+        centerPadding: '30px',
+        slidesToShow: 2,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows:false,
+        slidesToShow: 1,
+        infinite: true,
+        dots: false
+        
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+      
   });
 });
