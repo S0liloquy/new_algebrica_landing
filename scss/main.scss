@@ -115,7 +115,7 @@ $hamburger-hover-filter: opacity(50%) !default;
     width: 95%;
     margin: 0 auto;
     padding-top: 4rem;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
 }
 
 .s-wrap{
@@ -135,7 +135,8 @@ $hamburger-hover-filter: opacity(50%) !default;
 }
 
 .parallax-container.title {
-    height: 18rem;
+    height: 15rem;
+    background-color: rgba(185, 12, 14,0.3);
 }
 
 
@@ -268,6 +269,13 @@ p {
     @extend .titulo;
     color: $multipurpose-white;
 }
+
+.titulo4{
+    @extend .titulo3;
+    font-size: 3rem;
+    line-height: 3rem;
+    padding-top: 3rem;
+}
 .titulo2 {
     @extend .titulo;
     font-size: 3.5rem;
@@ -354,6 +362,7 @@ p {
     top: 0;
     z-index: 9999;
     transition: all 0.2s ease-in-out;
+    border-bottom: 0.5px solid $multipurpose-white;
     @include small-breakpoint {
         height: 5rem;
     }
@@ -676,11 +685,19 @@ img.logo {
 }
 
 
-.h-intro.noticias{
-    @extend .h-intro;
-    padding:0 1.5rem;
 
-}
+
+.noticias-paralax-overlay{
+    background-color: $primary-red;
+    opacity: 0.75;
+    position:absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    display:inline-block;
+    box-sizing: border-box;
+    }
 
 .intro {
     width: 100%;
@@ -694,6 +711,14 @@ img.logo {
     }
 }
 
+
+.h-intro.noticias{
+    @extend .intro;
+    padding:0 1.5rem;
+    position: inherit;
+    height: auto;
+
+}
 .l-address {
     width: 100%;
     padding-top: 0.5rem;
@@ -743,6 +768,7 @@ img.logo {
     bottom: 0;
     display:inline-block;
     box-sizing: border-box;
+   
 }
 
 .item-arquivo:hover .item-overlay{
