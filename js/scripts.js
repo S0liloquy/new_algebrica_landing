@@ -7,6 +7,7 @@ var content = document.getElementById('nav-content');
 var navigation = document.getElementById('h-navigation');
 // On click
 
+    if($('hamburger').is(':visible')){
 $('#hamburger, #nav-content a').click (function () {
 
     var aux = hamburger.classList.toggle('is-active');
@@ -26,6 +27,7 @@ $('#hamburger, #nav-content a').click (function () {
     }
 
 });
+        };
 
 });
 

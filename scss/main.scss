@@ -112,7 +112,7 @@ $hamburger-hover-filter: opacity(50%) !default;
 /*LAYOUT*/
 
 .t-wrap {
-    width: 98%;
+    width: 95%;
     margin: 0 auto;
     padding-top: 4rem;
     margin-bottom: 4rem;
@@ -121,7 +121,11 @@ $hamburger-hover-filter: opacity(50%) !default;
 .s-wrap{
     @extend .t-wrap;
     width: 100%;
-    background-color: $primary-red;
+    
+    height: 40rem;
+   
+    padding-top: 16rem;
+    padding-bottom: 3rem;
 }
 .parallax-container {
     height: 42rem;
@@ -131,7 +135,7 @@ $hamburger-hover-filter: opacity(50%) !default;
 }
 
 .parallax-container.title {
-    height: 26rem;
+    height: 18rem;
 }
 
 
@@ -260,6 +264,10 @@ p {
     }
 }
 
+.titulo3{
+    @extend .titulo;
+    color: $multipurpose-white;
+}
 .titulo2 {
     @extend .titulo;
     font-size: 3.5rem;
@@ -317,10 +325,12 @@ p {
     padding: 0 1rem;
     @include clearfix;
     @include breakpoint {
-        float: none;
-        padding: 0.5rem 0;
+        float: left;
         
+        &:last-child {
+        padding: 0 0.5rem;
         
+        }
     }
 }
 
@@ -360,6 +370,7 @@ p {
 
 .l-intro {
     padding-top: 6.3rem;
+    padding-bottom: 2rem;
     @include small-breakpoint {
         padding-top: 0;
     }
@@ -618,13 +629,27 @@ img.logo {
 
 /*LAYOUT*/
 
+.buttons{
+    background-color: $primary-red;
+}
+.l-row.intro{
+    
+    height: auto;
+}
+
+.l-arquivo{
+    background-color: $primary-red;
+    height: auto;
+    
+}
+
 .l-toogle-btn {
     width: 100%;
     margin: 0 auto;
-    height: 9rem;
-    padding-top: 3rem;
+    height: 7rem;
+    padding-top: 2rem;
     text-align: center;
-    border-bottom: 0.5px solid $text-grey;
+//    border-bottom: 0.5px solid $text-grey;
     @include breakpoint {
         height: 12rem;
     }
@@ -650,11 +675,18 @@ img.logo {
     }
 }
 
+
+.h-intro.noticias{
+    @extend .h-intro;
+    padding:0 1.5rem;
+
+}
+
 .intro {
     width: 100%;
     margin: 0 auto;
     height: 10rem;
-    padding: 3rem 0;
+    
     text-align: center;
     border-top: 0.5px solid $text-grey;
     @include breakpoint {
@@ -680,7 +712,7 @@ img.logo {
 
 
 .noticias{
-    padding-top: 30rem;
+    height: auto;
 }
 
 
@@ -859,7 +891,7 @@ hr {
 
 .btn-mod-border-pubs, .btn-mod-border-arq {
     width: 100%;
-    min-width: 160px;
+    min-width: 140px;
     background-color: $multipurpose-white;
     line-height: 3rem;
     height: 3rem;
@@ -878,7 +910,7 @@ hr {
     &:hover {
         width: 100%;
         background-color: $multipurpose-white;
-        min-width: 160px;
+        min-width: 140px;
         box-shadow: none;
         border: 1px solid $primary-red;
         box-sizing: border-box;
