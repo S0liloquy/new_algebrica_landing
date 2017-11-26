@@ -505,7 +505,7 @@ img.logo {
   height: auto; }
 
 .l-toogle-btn {
-  width: 100%;
+  width: 99%;
   margin: 0 auto;
   height: 4.5rem;
   display: -webkit-box;
@@ -705,7 +705,8 @@ img.logo {
 .l-btn-mod {
   position: relative;
   display: inline-block;
-  height: 4.5rem; }
+  height: 4.5rem;
+  width: 120px; }
 
 a.waves-effect.waves-light.btn.btn-mod {
   background-color: #B90C0E;
@@ -723,7 +724,7 @@ hr {
   height: 0.04rem;
   background-color: #ddd; }
 
-.arrow-down {
+.arrow-down-pubs, .arrow-down-arq {
   position: absolute;
   left: 25%;
   bottom: 0;
@@ -735,9 +736,7 @@ hr {
   border-bottom: 1rem solid #fff; }
 
 .btn-mod-border-pubs, .btn-mod-border-arq {
-  width: 100%;
-  min-width: 100px;
-  max-width: 200px;
+  width: 120px;
   text-align: center;
   background-color: #B90C0E;
   line-height: 3rem;
@@ -758,10 +757,8 @@ hr {
   text-transform: lowercase;
   opacity: 0.6; }
   .btn-mod-border-pubs:hover, .btn-mod-border-arq:hover {
-    width: 100%;
+    width: 120px;
     background-color: #B90C0E;
-    min-width: 100px;
-    max-width: 200px;
     text-align: center;
     padding: 0 1rem;
     box-shadow: none;
@@ -770,9 +767,7 @@ hr {
     color: #fff;
     opacity: 1; }
   .btn-mod-border-pubs:focus, .btn-mod-border-arq:focus {
-    width: 100%;
-    min-width: 100px;
-    max-width: 200px;
+    width: 120px;
     text-align: center;
     padding: 0 1rem;
     background-color: #B90C0E;
@@ -780,9 +775,7 @@ hr {
     border-top: 3px solid #fff; }
 
 .btn-active {
-  width: 100%;
-  min-width: 100px;
-  max-width: 200px;
+  width: 120px;
   text-align: center;
   padding: 0 1rem;
   border-top: 3px solid #fff;
@@ -792,9 +785,7 @@ hr {
   -webkit-transition: all 0.5s ease;
           transition: all 0.5s ease; }
   .btn-active:hover {
-    width: 100%;
-    min-width: 100px;
-    max-width: 200px;
+    width: 120px;
     text-align: center;
     padding: 0 1rem;
     border-top: 3px solid #fff;

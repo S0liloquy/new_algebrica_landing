@@ -662,7 +662,7 @@ width: 100%;
 }
 
 .l-toogle-btn {
-    width: 100%;
+    width: 99%;
     margin: 0 auto;
     height: 4.5rem;    
    // text-align: center;
@@ -903,6 +903,7 @@ width: 100%;
     position: relative;
     display: inline-block;
     height: 4.5rem;
+    width: 120px;
     
     
 }
@@ -929,7 +930,7 @@ hr {
     background-color: #ddd;
 }
 
-.arrow-down{
+%arrow-down{
     position: absolute;
     left: 25%;
     bottom:0;
@@ -940,11 +941,16 @@ hr {
     border-right:2rem solid transparent; 
     border-bottom:1rem solid $multipurpose-white;
 }
+
+
+.arrow-down-pubs, .arrow-down-arq{
+    @extend %arrow-down;
+}
+
+
 .btn-mod-border-pubs, .btn-mod-border-arq {
    
-    width: 100%;
-    min-width: 100px;
-    max-width: 200px;
+   width: 120px;
     text-align: center;
     background-color: $primary-red;
     line-height: 3rem;
@@ -965,11 +971,10 @@ hr {
     opacity: 0.6;
     
     &:hover {
-        width: 100%;
+     width: 120px;
         background-color: $primary-red;
-        min-width: 100px;
-        max-width: 200px;
-         text-align: center;
+        
+        text-align: center;
         padding: 0 1rem;
         box-shadow: none;
         border-top: 3px solid $multipurpose-white;
@@ -978,9 +983,7 @@ hr {
         opacity: 1;
     }
     &:focus {
-         width: 100%;
-        min-width: 100px;
-        max-width: 200px;
+       width: 120px;
          text-align: center;
         padding: 0 1rem;
         background-color: $primary-red;
@@ -995,9 +998,7 @@ hr {
 
 
 .btn-active {
-    width: 100%;
-    min-width: 100px;
-    max-width: 200px;
+   width: 120px;
      text-align: center;
     padding: 0 1rem;
     border-top: 3px solid $multipurpose-white;
@@ -1006,9 +1007,7 @@ hr {
     opacity: 1;
     transition: all 0.5s ease;
     &:hover {
-        width: 100%;
-    min-width: 100px;
-        max-width: 200px;
+        width: 120px;
         text-align: center;
         padding: 0 1rem;
         border-top: 3px solid $multipurpose-white;

@@ -31,6 +31,9 @@ $('#hamburger, #nav-content a').click (function () {
 
 });
 
+
+
+
 //PARALAX
 
 $(document).ready(function () {
@@ -55,6 +58,7 @@ $('.btn-mod-border-pubs.btn-active').length && setContent($('.btn-mod-border-pub
 function setContent($el) {
     $('.btn-mod-border-pubs').removeClass('btn-active');
     $('.toggle-pubs').hide();
+    $('.arrow-down-pubs').hide();
 
     $el.addClass('btn-active');
     $($el.data('rel')).show();
@@ -72,6 +76,7 @@ function setContent($el) {
 $('.btn-mod-border-arq').click(function (e) {
     e.preventDefault();
     setContent($(this));
+    
 });
 
     
@@ -81,6 +86,8 @@ $('.btn-mod-border-arq.btn-active').length && setContent($('.btn-mod-border-arq.
 function setContent($el) {
     $('.btn-mod-border-arq').removeClass('btn-active');
     $('.toggle-arq').hide();
+    $('.arrow-down-arq').hide();
+    
 
     $el.addClass('btn-active');
     $($el.data('rel')).show();
