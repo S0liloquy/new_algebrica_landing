@@ -117,8 +117,12 @@ $hamburger-hover-filter: opacity(50%) !default;
     margin: 0 auto;
     padding-top: 4rem;
     margin-bottom: 6rem;
+   
 }
 
+.news{
+        margin-bottom: 12rem;
+    }
 .s-wrap{
     @extend .t-wrap;
     width: 100%;
@@ -247,12 +251,17 @@ $secondary-font:'Georgia',
 Times,
 'Times New Roman',
 serif;
+
+a{
+    text-decoration: none; 
+}
 .texto,
 p {
     font-family: $primary-font;
     font-size: 1rem;
     line-height: 1.8rem;
     color: $text-grey;
+   
 }
 
 .titulo {
@@ -1183,4 +1192,67 @@ div#mc_embed_signup_scroll {
         width: 100%;
         margin: 0;
     }
+}
+
+
+.header-news{
+    position: absolute;
+    top:0;
+    width: 100%;
+    background-color: $primary-red;
+    height: 4rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.news-info{
+    background-color: $text-grey;
+    padding: 1rem;
+    
+}
+
+.cargo{
+    font-family: $primary-font;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    font-style: normal;
+    color: rgba(256,256,256,0.5);
+   
+}
+
+.nome{
+    @extend .texto;
+    font-weight: bold;
+    color: rgba(256,256,256,0.8);
+   
+}
+
+.citacao{
+    @extend .titulo3;
+    padding-top: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    font-style: italic;
+    padding-bottom: 0;
+    &:before{
+        content: ('\201C');
+    }
+    &:after{
+        content: ('\201D');
+    }
+}
+
+.num-news{
+    @extend .titulo3;
+    font-family: $primary-font;
+    font-size: 1.2rem;
+     color: rgba(256,256,256,0.5);
+}
+
+article{
+    text-align: left;
+}
+
+.item-arquivo a img{
+    padding-top: 4rem;
 }

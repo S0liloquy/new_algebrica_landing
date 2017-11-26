@@ -76,6 +76,9 @@ function setContent($el) {
 $('.btn-mod-border-arq').click(function (e) {
     e.preventDefault();
     setContent($(this));
+    $('.content-arquivo-revista').slick("getSlick").refresh();
+    
+$('.content-arquivo-newsletter').slick("getSlick").refresh();
     
 });
 
@@ -197,3 +200,51 @@ $(document).ready(function(){
       
   });
 });
+
+$(document).ready(function(){
+  $('.content-arquivo-newsletter').slick({
+  centerMode: true,
+  centerPadding: '30px',
+  slidesToShow: 7,
+      dots: true,
+      accessibility:true,
+      initialSlide:'11',
+      responsive: [
+    {
+      breakpoint: 1281,
+      settings: {
+        centerMode: true,
+        centerPadding: '30px',
+        slidesToShow: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        centerMode: true,
+        centerPadding: '30px',
+        slidesToShow: 2,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows:false,
+        slidesToShow: 1,
+        infinite: true,
+        dots: false
+        
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+      
+  });
+});
+
