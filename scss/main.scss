@@ -158,7 +158,11 @@ $hamburger-hover-filter: opacity(50%) !default;
     background-color: rgba(185, 12, 14,0.3);
 }
 
+.parallax-container.title-contactos{
+   height:22rem;
+    background: rgba(8,8,8,0.7);
 
+}
 
 .space {
     padding-top: 6rem;
@@ -619,6 +623,7 @@ button#hamburger.hamburger.hamburger-elastic.show-menu.nav-btn-mod {
 
 .t-wrap.contactos{
     height: 12rem;
+    margin-top: 0;
     
 }
 
@@ -654,7 +659,7 @@ img.mockup {
 }
 
 img.logo {
-    width: 40%;
+    width: 20%;
     height: auto;
     padding-bottom: 2rem;
     @include breakpoint {
@@ -737,6 +742,11 @@ width: 100%;
     box-sizing: border-box;
     }
 
+.noticias-paralax-overlay2{
+    @extend .noticias-paralax-overlay;
+    background-color: rgba(0,0,0,0.7);
+}
+
 .intro {
     width: 100%;
     margin: 0 auto;
@@ -759,6 +769,10 @@ width: 100%;
     justify-content: center;
     align-items: center;
 
+}
+
+.h-intro.contactos{
+    position: inherit;
 }
 .l-address {
     width: 100%;
@@ -888,6 +902,13 @@ width: 100%;
    
 }
 
+.item-arquivo-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 28rem;
+}
+
 /////////////////////////////////////////////
 ////////////////SLICK///////////////////////
 
@@ -928,6 +949,17 @@ width: 100%;
 
 .slick-dots{
     bottom: -2.5rem;
+}
+
+//flex stuff
+.slick-track{
+	display: flex;
+	
+	.slick-slide{
+		display: flex;
+        flex-direction: column;
+		height: auto;
+    }
 }
 
 //////////////////////////////////////////////////////////77
@@ -1234,6 +1266,7 @@ div#mc_embed_signup_scroll {
 .news-info{
     background-color: $text-grey;
     padding: 1rem;
+   flex-grow: 2;
     
 }
 
@@ -1271,8 +1304,9 @@ div#mc_embed_signup_scroll {
 .num-news{
     @extend .titulo3;
     font-family: $primary-font;
-    font-size: 1.2rem;
-     color: rgba(256,256,256,0.5);
+    font-size: 1rem;
+    color: rgba(256,256,256,0.5);
+    font-weight: 100;
 }
 
 article{
@@ -1281,5 +1315,6 @@ article{
 
 .item-arquivo a img{
    width:100%;
+    height: auto;
     padding-top: 4rem;
 }

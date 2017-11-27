@@ -195,7 +195,7 @@ $(document).ready(function(){
   $('.content-arquivo-revista').slick({
   centerMode: true,
   centerPadding: '30px',
-  slidesToShow: 7,
+  slidesToShow: 5,
       dots: true,
       accessibility:true,
       initialSlide:'11',
@@ -205,7 +205,7 @@ $(document).ready(function(){
       settings: {
         centerMode: true,
         centerPadding: '30px',
-        slidesToShow: 5,
+        slidesToShow: 3,
         infinite: true,
         dots: true
       }
