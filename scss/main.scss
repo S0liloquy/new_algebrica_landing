@@ -103,7 +103,7 @@ $hamburger-hover-filter: opacity(50%) !default;
             }
         }
         #hamburger {
-            visibility: visible;
+            display: block;
         }
     }
 }
@@ -507,8 +507,7 @@ button#hamburger.hamburger.hamburger-elastic.show-menu.nav-btn-mod {
 }
 
 #hamburger {
-    visibility: hidden;
-    display: block;
+    display: none;
 }
 
 .hamburger {
@@ -780,7 +779,7 @@ width: 100%;
 
 .noticias{
     height: auto;
-    padding-top: 8rem;
+    margin-top: 8rem;
 }
 
 
