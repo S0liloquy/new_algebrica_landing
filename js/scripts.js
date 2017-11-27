@@ -205,7 +205,7 @@ $(document).ready(function(){
   $('.content-arquivo-newsletter').slick({
   centerMode: true,
   centerPadding: '30px',
-  slidesToShow: 7,
+  slidesToShow: 5,
       dots: true,
       accessibility:true,
       initialSlide:'11',

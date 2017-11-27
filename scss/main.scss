@@ -112,25 +112,38 @@ $hamburger-hover-filter: opacity(50%) !default;
 
 /*LAYOUT*/
 
-.t-wrap {
+%wrap {
     width: 95%;
     margin: 0 auto;
     padding-top: 4rem;
     margin-bottom: 6rem;
-   
+}
+
+.p-wrap{
+    @extend %wrap;
+}
+
+.t-wrap{
+    @extend %wrap;
+    margin-top: 3rem;
 }
 
 .news{
         margin-bottom: 12rem;
     }
-.s-wrap{
-    @extend .t-wrap;
-    width: 100%;
+
+.s-wrap-revista{
     
-    height: 40rem;
-   
+    width: 100%;    
+    height: 40rem;   
     padding-top: 16rem;
     padding-bottom: 3rem;
+    margin-bottom: 6rem;
+}
+
+.s-wrap-news{
+    @extend .s-wrap-revista;
+    height: 50rem;
 }
 .parallax-container {
     height: 42rem;
@@ -283,9 +296,9 @@ p {
 
 .titulo4{
     @extend .titulo3;
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 3rem;
-    padding-top: 3rem;
+    padding-top: 6rem;
 }
 .titulo2 {
     @extend .titulo;
@@ -724,7 +737,7 @@ width: 100%;
     height: 10rem;
     
     text-align: center;
-    border-top: 0.5px solid $text-grey;
+   
     @include breakpoint {
         height: 10rem;
     }
@@ -736,6 +749,9 @@ width: 100%;
     padding:0 1.5rem;
     position: inherit;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 .l-address {
@@ -757,6 +773,7 @@ width: 100%;
 
 .noticias{
     height: auto;
+    padding-top: 8rem;
 }
 
 
@@ -765,19 +782,19 @@ width: 100%;
 }
 
 
-.item-arquivo img{
+.item-arquivo-revista img, .item-arquivo img{
     width: 100%;
    
 }
 
-.item-arquivo{
+.item-arquivo-revista, .item-arquivo{
     width: 100%;
     position: relative;
     display: inline-block;
     
 }
 
-.item-overlay{
+.item-overlay-revista, .item-overlay{
     background-color: $primary-red;
     opacity: 0;
     position:absolute;
@@ -790,6 +807,7 @@ width: 100%;
    
 }
 
+.item-arquivo-revista:hover .item-overlay-revista, 
 .item-arquivo:hover .item-overlay{
     width:100%;
     height:100%;
@@ -803,12 +821,14 @@ width: 100%;
     transition: all 0.5s ease;
 }
 
-.item-arquivo:hover .btn-mod-border-item{
+.item-arquivo-revista:hover .btn-mod-border-item,
+.item-arquivo:hover .btn-mod-border-item {
     opacity: 1;    
     transition: opacity 0.2s ease;
 }
 
-.item-arquivo:hover img{
+.item-arquivo-revista:hover img,
+.item-arquivo:hover img {
     opacity: 0.8;    
     transition: all 0.2s ease;
     
@@ -1254,5 +1274,6 @@ article{
 }
 
 .item-arquivo a img{
+   width:100%;
     padding-top: 4rem;
 }
