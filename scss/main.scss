@@ -113,7 +113,7 @@ $hamburger-hover-filter: opacity(50%) !default;
 /*LAYOUT*/
 
 %wrap {
-    width: 95%;
+    width: 98%;
     margin: 0 auto;
     padding-top: 4rem;
     margin-bottom: 6rem;
@@ -134,7 +134,8 @@ $hamburger-hover-filter: opacity(50%) !default;
 
 .s-wrap-revista{
     
-    width: 100%;    
+    width: 94%;
+    margin: 0 auto;
     height: 40rem;   
     padding-top: 16rem;
     padding-bottom: 3rem;
@@ -616,6 +617,10 @@ button#hamburger.hamburger.hamburger-elastic.show-menu.nav-btn-mod {
     height: auto;
 }
 
+.t-wrap.contactos{
+    height: 12rem;
+    
+}
 
 /*IMAGES*/
 
@@ -651,6 +656,7 @@ img.mockup {
 img.logo {
     width: 40%;
     height: auto;
+    padding-bottom: 2rem;
     @include breakpoint {
         padding-top: 2rem;
         margin-left: 0;

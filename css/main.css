@@ -11,7 +11,7 @@
 /*BREAKPOINTS*/
 /*LAYOUT*/
 .p-wrap, .t-wrap {
-  width: 95%;
+  width: 98%;
   margin: 0 auto;
   padding-top: 4rem;
   margin-bottom: 6rem; }
@@ -23,7 +23,8 @@
   margin-bottom: 12rem; }
 
 .s-wrap-revista, .s-wrap-news {
-  width: 100%;
+  width: 94%;
+  margin: 0 auto;
   height: 40rem;
   padding-top: 16rem;
   padding-bottom: 3rem;
@@ -465,6 +466,9 @@ button#hamburger.hamburger.hamburger-elastic.show-menu.nav-btn-mod {
   background-color: #1D1D1B;
   height: auto; }
 
+.t-wrap.contactos {
+  height: 12rem; }
+
 /*IMAGES*/
 svg {
   display: block;
@@ -495,7 +499,8 @@ img.mockup {
 
 img.logo {
   width: 40%;
-  height: auto; }
+  height: auto;
+  padding-bottom: 2rem; }
   @media screen and (max-width: 50rem) {
     img.logo {
       padding-top: 2rem;
