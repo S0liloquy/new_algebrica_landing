@@ -376,7 +376,8 @@ button#hamburger.hamburger.hamburger-elastic.show-menu.nav-btn-mod {
     background-color: transparent; }
 
 #hamburger {
-  visibility: hidden; }
+  visibility: hidden;
+  display: block; }
 
 .hamburger {
   padding: 1rem 1.4rem;

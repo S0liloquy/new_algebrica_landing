@@ -1,3 +1,7 @@
+
+
+
+
 //HAMBURGUER MOBILE NAV
 
 $(document).ready(function () {
@@ -5,9 +9,20 @@ $(document).ready(function () {
 var hamburger = document.getElementById('hamburger');
 var content = document.getElementById('nav-content');
 var navigation = document.getElementById('h-navigation');
+    
+    
+    //check if exist and is visible
+function isVisible(id) {
+    var element = $('#' + id);
+    if (element.length > 0 && element.css('visibility') !== 'hidden' && element.css('display') !== 'none') {
+        return true;
+    } else {
+        return false;
+    };
+};
 // On click
-
-    if($('hamburger').is(':visible')){
+    
+    if(isVisible('hamburger')){
 $('#hamburger, #nav-content a').click (function () {
 
     var aux = hamburger.classList.toggle('is-active');
@@ -27,7 +42,7 @@ $('#hamburger, #nav-content a').click (function () {
     }
 
 });
-        };
+       };
 
 });
 
